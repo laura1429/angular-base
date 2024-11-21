@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { resetFakeAsyncZone } from '@angular/core/testing';
+import { NonNullableFormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'bases';
+
+  public title: string = 'Hola Mundo';
+
+
+
 }
